@@ -1,0 +1,87 @@
+/* Reset básico */
+body, h1, h2, p, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilização geral */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    margin: 20px;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1, h2 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+  }
+  
+  .task {
+    margin-bottom: 40px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  input, button {
+    font-size: 1em;
+    padding: 10px;
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input {
+    background-color: #fff;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .output {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #eef;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333;
+    white-space: pre-wrap; 
+  }
+  
+  .output:empty {
+    display: none;
+  }
+  

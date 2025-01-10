@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Desafios Técnicos</title>
+    
+</head>
+
+<body>
+    <div class="container">
+        <h1>Desafios Técnicos</h1>
+
+        <!-- Soma de 1 a 13 -->
+        <div class="task" id="task1">
+            <h2>1. Soma de 1 a 13</h2>
+            <button onclick="calcularSoma()">Calcular Soma</button>
+            <div class="output" id="output1"></div>
+        </div>
+
+        <!-- Sequência de Fibonacci -->
+        <div class="task" id="task2">
+            <h2>2. Verificar Número na Fibonacci</h2>
+            <input type="number" id="numeroFibonacci" placeholder="Digite um número">
+            <button onclick="verificarFibonacci()">Verificar</button>
+            <div class="output" id="output2"></div>
+        </div>
+
+        <!-- Faturamento Diário -->
+        <div class="task" id="task3">
+            <h2>3. Faturamento Diário</h2>
+            <button onclick="calcularFaturamento()">Calcular Faturamento</button>
+            <div class="output" id="output3"></div>
+        </div>
+
+        <!-- Percentual de Faturamento -->
+        <div>
+            <h3>Faturamento Mensal por Estado</h3>
+            <table border="1" style="width: 50%; text-align: left; margin-bottom: 20px;">
+              <thead>
+                <tr>
+                  <th>Estado</th>
+                  <th>Faturamento (R$)</th>
+                  <th>Percentual (%)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>SP</td>
+                  <td>67.836,43</td>
+                  <td id="percentualSP"></td>
+                </tr>
+                <tr>
+                  <td>RJ</td>
+                  <td>36.678,66</td>
+                  <td id="percentualRJ"></td>
+                </tr>
+                <tr>
+                  <td>MG</td>
+                  <td>29.229,88</td>
+                  <td id="percentualMG"></td>
+                </tr>
+                <tr>
+                  <td>ES</td>
+                  <td>27.165,48</td>
+                  <td id="percentualES"></td>
+                </tr>
+                <tr>
+                  <td>Outros</td>
+                  <td>19.849,53</td>
+                  <td id="percentualOutros"></td>
+                </tr>
+              </tbody>
+            </table>
+            <div id="outputPercentuais" style="margin-top: 10px; color: green;"></div>
+            <button onclick="calcularPercentuais()">Calcular Percentuais</button>
+          </div>
+          
+          
+
+        <!-- Inverter String -->
+        <div class="task" id="task5">
+            <h2>5. Inverter String</h2>
+            <input type="text" id="stringInvertida" placeholder="Digite uma string">
+            <button onclick="inverterString()">Inverter</button>
+            <div class="output" id="output5"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
